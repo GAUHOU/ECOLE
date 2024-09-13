@@ -1,0 +1,34 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+:root{
+    --colorText: rgb(95, 95, 95);
+}
+
+.session-form{
+    padding: 3rem;
+}
+
+.session-form > *{
+    color: var(--colorText);
+}
+
+.session-form p{
+    font-size: .9rem;
+}
+
+.session-form form{
+    padding: 1rem 0;
+}
+
+.session-form form input{
+    flex: 1 1 10rem;
+}
+
+.session-form p a{
+    color: #3498dbaf !important;
+}

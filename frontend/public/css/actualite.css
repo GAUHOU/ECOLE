@@ -1,0 +1,113 @@
+.session-1{
+    position: relative;
+    width: 98%;
+    height: 400px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.session-1 .slider-case-img{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.session-1 .slider-case-img .slider-img{
+    width: 100%;
+    display: flex;
+    transition: all 5s;
+    animation: slider-1 35s infinite ease-in-out;
+}
+
+.session-1 img{
+    width: 100%;
+    flex-shrink: 0;
+    filter: blur(5px);
+}
+
+@keyframes slider-1 {
+    0%, 20%{
+        transform: translateX(0);
+    }
+    25%, 45%{
+        transform: translateX(-100%);
+    }
+    50%, 70%{
+        transform: translateX(-200%);
+    }
+    75%, 95%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-400%);
+    }
+}
+
+.session-1 > *{
+    color: #fff;
+}
+
+.session-1 h1{
+    font-size: 3.5rem;
+    text-align: center;
+    color: #3498db;
+}
+
+.session-1 h3{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.session-1 p{
+    text-align: center;
+}
+
+.session-2 .apropos-text{
+    position: relative;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #3498db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.session-2 .apropos-text::before{
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    width: 150px;
+    height: 8px;
+    border-radius: 30px;
+    background-color: #3498db;
+}
+
+.session-2 p{
+    width: 70%;
+    font-size: 1.2rem;
+    color: var(--colorText);
+}
+
+.session-2 .case-grid{
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto)) !important;
+    gap: 2rem;
+    width: 100%;
+}
+
+.session-2 .case-grid .grid .img{
+    width: 100%;
+}
+
+.session-2 .case-grid .grid .img img{
+    width: 100%;
+}
+
+.session-2 .case-grid a{
+    text-decoration: none;
+}
+
+.session-2 .case-grid a:hover{
+    background-color: #5cb2eb5d;
+}
+

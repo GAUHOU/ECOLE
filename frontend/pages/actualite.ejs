@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/actualite.css">
+</head>
+<body>
+    <%- include ("../pages/tete.ejs") %>
+
+    <div class="case">
+        <div class="case session-1 mg-20 c-f-d">
+            <div class="slider-case-img">
+                <div class="slider-img">
+                    <img src="../images/concours.jpg" alt="">
+                    <img src="../images/concours-1.jpg" alt="">
+                    <img src="../images/concours.jpg" alt="">
+                    <img src="../images/concours.jpg" alt="">
+                    <img src="../images/concours.jpg" alt="">
+                </div>
+            </div>
+            <h1>INSTITUT SAINT JOSEPH DE TIASSALE</h1>
+            <h3>ETABLISSEMENT D’ENSEIGNEMENT GENERAL, TECHNIQUE & PROFESSIONNEL</h3>
+        </div>
+        <div class="case session-2 mg-20">
+            <div class="case-g mg-20"><h3 class="apropos-text t-c">Actualités</h3></div>
+            <p class="t-c mg-20">Le lycée privé Michelet a été fondé en 1954 par Michel Pinder et dirigé sous sa direction jusqu’en 2014. Ce n’est qu’en 1988 que Michel Pinder a pris la décision d’ouvrir une classe pilote de 6ème/5ème destinée aux enfants intellectuellement précoces, rencontrant un succès immédiat. L’année suivante, une classe de 4ème/3ème a été introduite, marquant ainsi l’établissement d’un cycle complet de lycée. Plus récemment, sous l’impulsion de Xave et Pierre Schorter, qui ont pris la direction en juin 2014, un primaire a été ajouté, enrichissant davantage l’offre éducative de Michelet.</p>
+            <div class="case">
+                <div class="case-grid">
+                    <% for (let i = 0; i < 1; i++){ %>
+                        <a href="" class="grid ombre">
+                            <div class="img"><img src="../images/affiche-saint-joseph.png" alt=""></div>
+                            <h3>Actualités <%= i %> </h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis distinctio aliquid dolor quam sit id omnis voluptates modi et consequatur.</p>
+                        </a>
+                    <% } %>
+
+                    <a href="" class="grid ombre">
+                        <div class="img"><img src="../images/cafop.jpg" alt=""></div>
+                        <h3>Actualités</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis distinctio aliquid dolor quam sit id omnis voluptates modi et consequatur.</p>
+                    </a>
+
+                    <a href="" class="grid ombre">
+                        <div class="img"><img src="../images/ENA.jpg" alt=""></div>
+                        <h3>Actualités</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis distinctio aliquid dolor quam sit id omnis voluptates modi et consequatur.</p>
+                    </a>
+
+                    <a href="" class="grid ombre">
+                        <div class="img"><img src="../images/mqdefault.jpg" alt=""></div>
+                        <h3>Actualités</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis distinctio aliquid dolor quam sit id omnis voluptates modi et consequatur.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

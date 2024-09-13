@@ -1,0 +1,700 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .8s;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*-----------------------polices---------------------*/
+@font-face {
+    font-family: "3D Grunge Studio";
+    src: url("../fonts/3D\ Grunge\ Studio.ttf");
+}
+
+@font-face {
+    font-family: "Aeronomic Sans-Regular";
+    src: url("../fonts/AeronomicSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Ahganirya";
+    src: url("../fonts/Ahganirya.otf");
+}
+
+@font-face {
+    font-family: "Amidone Grotesk";
+    src: url("../fonts/AmidoneGrotesk.ttf");
+}
+
+@font-face {
+    font-family: "Atjeh";
+    src: url("../fonts/Atjeh.otf");
+}
+
+@font-face {
+    font-family: "Audience";
+    src: url("../fonts/Audience.otf");
+}
+
+@font-face {
+    font-family: "Avoidance Genevra Regular";
+    src: url("../fonts/AvoidanceGenevraRegular.ttf");
+}
+
+@font-face {
+    font-family: "Balegah";
+    src: url("../fonts/Balegah.otf");
+}
+
+@font-face {
+    font-family: "Benidorm Trip";
+    src: url("../fonts/Benidorm\ Trip.otf");
+}
+
+@font-face {
+    font-family: "Billing Lottre-Regular";
+    src: url("../fonts/Billing\ Lottre-Regular.otf");
+}
+
+@font-face {
+    font-family: "Billing Lottre";
+    src: url("../fonts/Billing\ Lottre.ttf");
+}
+
+@font-face {
+    font-family: "Blafhy Glibs";
+    src: url("../fonts/Blafhy\ Glibs.otf");
+}
+
+@font-face {
+    font-family: "Bowlist-PERSONAL USE ONLY";
+    src: url("../fonts/Bowlist\ -\ PERSONAL\ USE\ ONLY.otf");
+    src: url("../fonts/Bowlist\ -\ PERSONAL\ USE\ ONLY.ttf");
+}
+
+@font-face {
+    font-family: "Brunch";
+    src: url("../fonts/Brunch.otf");
+}
+
+@font-face {
+    font-family: "Camioneta DEMO-Regular";
+    src: url("../fonts/CamionetaDEMO-Regular.otf");
+}
+
+@font-face {
+    font-family: "Chanrest";
+    src: url("../fonts/Chanrest.otf");
+}
+
+@font-face {
+    font-family: "Chiro-Regular";
+    src: url("../fonts/Chiro-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Corbert Condensed-Regular";
+    src: url("../fonts/CorbertCondensed-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Crimes of the Times";
+    src: url("../fonts/Crimes\ of\ the\ Times.ttf");
+}
+
+@font-face {
+    font-family: "Diary Agustus";
+    src: url("../fonts/Diary\ Agustus.otf");
+}
+
+@font-face {
+    font-family: "Duran-Medium";
+    src: url("../fonts/Duran-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Edgecutting Lite Medium";
+    src: url("../fonts/EdgecuttingLiteMedium.ttf");
+}
+
+@font-face {
+    font-family: "Edgecutting Lite Medium It";
+    src: url("../fonts/EdgecuttingLiteMediumIt.ttf");
+}
+
+@font-face {
+    font-family: "Edgecutting Lite Sharp";
+    src: url("../fonts/EdgecuttingLiteSharp.ttf");
+}
+
+@font-face {
+    font-family: "EdgecuttingLiteTight";
+    src: url("../fonts/EdgecuttingLiteTight.ttf");
+}
+
+:root{
+    --colorText: rgb(95, 95, 95);
+}
+
+body{
+    overflow: hidden;
+    overflow-y: auto;
+    background-color: rgba(223, 223, 223, 0.37);
+}
+
+/*----------------------------icones-------------------------*/
+
+/*-----------------------Menu horizontal---------------------*/
+
+.nav-hoz{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.c-g{
+    display: flex !important;
+    justify-content: left !important;
+    gap: 2rem !important;
+}
+
+.c-c{
+    display: flex !important;
+    justify-content: center !important;
+    gap: 2rem !important;
+}
+
+.c-d{
+    display: flex !important;
+    justify-content: right !important;
+    gap: 2rem !important;
+}
+
+.c-f-d{
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2rem;
+    padding: 5px;
+}
+
+.t-c{
+    text-align: center !important;
+}
+
+.mg-20{
+    margin: 2rem 0 2rem 0;
+}
+
+.noire{
+    background-color: #363949 !important;
+}
+
+
+.nav-hoz ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    list-style: none;
+}
+
+.nav-hoz ul li a{
+    text-decoration: none;
+    display: flex;
+    padding: 1.5rem 1rem;
+    color: #000;
+}
+
+.noire ul li a{
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+
+.menu li a.btn{
+    padding: .5rem .8rem !important;
+}
+
+.menu li a.btn:hover::after{
+    content: '';
+    width: 0;
+}
+
+.nav-hoz ul li a:hover{
+    color: #3498db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+}
+
+.nav-hoz ul li a:hover::after{
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    width: 50px;
+    height: 3px;
+    background-color: #3498db;
+    border-radius: 10px;
+}
+
+.icons{
+    width: 30px;
+    height: auto;
+}
+
+.hamburger{
+    display: none;
+    padding: .2rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.26);
+}
+
+
+
+
+/*-----------------------les cases---------------------*/
+
+.case{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: .5rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.case-p{
+    padding: 1rem;
+    flex: 1 1 25rem;
+}
+
+.case-m{
+    padding: 1rem;
+    flex: 1 1 50rem;
+}
+
+.case-g{
+    padding: 1rem;
+    flex: 1 1 100rem;
+}
+
+.case-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 1rem;
+    padding: .3rem;
+}
+
+.btn{
+    padding: 8px 12px;
+    color: #fff !important;
+    background-color: #3498db;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-content: stretch;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+}
+
+input, select{
+    flex: 1 1 15rem;
+    padding: .5rem;
+    resize: none;
+    outline: none;
+}
+
+textarea{
+    width: 100%;
+    padding: .5rem;
+    resize: none;
+    outline: none;
+}
+
+.tableau{
+    overflow-x: auto;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    table-layout: fixed;
+}
+
+th, td{
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1.5px solid #dddddd;
+}
+
+th{
+    background-color: #3498db;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: 14px;
+}
+
+tr:hover{
+    background-color: #f1f1f1;
+}
+
+td{
+    font-size: 14px;
+    color: #333;
+}
+
+td.td{
+    display: flex;
+    gap: .5rem;
+}
+
+td:last-child{
+    text-align: right;
+}
+
+tr:nth-child(even){
+    background-color: #f9f9f9;
+}
+
+
+.flou{
+    backdrop-filter: blur(.2rem);
+}
+
+.slider-wrapper{
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 70px 55px;
+}
+
+.card-list .card-item{
+    color: #000;
+    width: 400px;
+    padding: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 8px;
+    backdrop-filter: blur(30px);
+    background: rgba(255, 255, 255, 0.555);
+    border: 1px solid rgba(77, 77, 77, 0.555);
+}
+
+
+
+
+@media (max-width: 768px) {
+    .hamburger{
+        display: flex;
+        cursor: pointer;
+        z-index: 200;
+    }
+
+    .nav-hoz .menu{
+        display: none !important;
+        flex-direction: column;
+        position: absolute;
+        background: #3498db94;
+        backdrop-filter: blur(.2rem);
+        width: 100%;
+        top: 0;
+        right: 0;
+        padding: .8rem;
+        z-index: 100;
+        transition: all 1s;
+    }
+
+    .nav-hoz .menu li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-hoz .menu li a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        color: #fff;
+    }
+
+    .nav-hoz .menu.active{
+        display: flex !important;
+    }
+
+    .h1-rsp{
+        font-size: 1.5rem !important;
+        color: rgb(8, 87, 83);
+        font-weight: 900;
+    }
+
+    .session-1 .btns > *{
+        font-size: .7rem !important;
+    }
+
+    .session-1 .case-text h3{
+        font-size: 1rem !important;
+    }
+
+    .session-2 .case-text p{
+        font-size: .5rem;
+    }
+
+    .session-3{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .session-4{
+        height: 650px !important;
+        background-color: #333333a8;
+    }
+
+    .session-4 img{
+        filter: blur(1px) !important;
+    }
+
+    .session-4 h1{
+        font-size: 2rem !important;
+        text-align: center;
+    }
+    
+    .session-4 h3{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .session-4 p{
+        text-align: center;
+    }
+    
+    .session-4 .btns{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .session-4 .btns > *{
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+    
+    .session-4 .btns .btn:nth-child(2){
+        background-color: transparent;
+        border: 2px solid #3498db;
+        color: #fff !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*-----------------------Menu vertical---------------------*/
+
+.nav-vrt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 13%;
+    height: 100vh;
+    float: left;
+    background-color: rgba(221, 221, 221, 0.267);
+    box-shadow: 0 0 10px rgba(132, 139, 200, 0.18);
+    transition: all 1s;
+}
+
+.width-vrt{
+    width: 6%;
+}
+
+.nav-vrt .logo{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    padding: .8rem;
+}
+
+.nav-vrt ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+    list-style: none;
+    width: 100%;
+}
+
+.nav-vrt .menu li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-vrt ul li a{
+    text-decoration: none;
+    display: flex;
+    justify-content: left;
+    align-content: normal;
+    gap: 1rem;
+    padding: 1rem .5rem;
+    width: 100%;
+    color: #000;
+}
+
+.nav-vrt ul li a text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+}
+
+.nav-vrt ul li a .icon{
+    width: 20px;
+    height: auto;
+}
+
+.nav-vrt ul li a .icon img{
+    width: 100%;
+    height: auto;
+    color: red;
+}
+
+.nav-vrt ul li a:hover{
+    background-color: rgba(23, 226, 216, 0.158);
+    border-left: 5px solid rgba(23, 226, 216, 0.488);
+    border-radius: 2px;
+    transition: all .3s;
+}
+
+.noire ul li a{
+    color: #fff;
+}
+
+.hamburger-admin{
+    padding: .2rem;
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.26);*/
+    cursor: pointer;
+}
+
+.none{
+    display: none !important;
+    transition: all 1s;
+}
+
+
+/*-----------------------les cases---------------------*/
+
+.flot-d{
+    float: right;
+    width: 87%;
+    height: 90vh;
+    overflow: hidden;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #f6f6f9;
+    border-radius: 3px;
+    transition: all 1s;
+}
+
+.width-flot-d{
+    width: 94%;
+}
+
+.ombre{
+    box-shadow: 0 0 10px rgba(132, 139, 200, 0.18);
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: #fff;
+    transition: all 1s;
+}
+
+.profil{
+    display: inline-flex;
+    border-radius: 50%;
+    padding: .3rem;
+}
+
+.profil img{
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    body{
+        overflow-y: auto;
+    }
+
+    .nav-vrt{
+        position: absolute;
+        transform: translateX(-40rem);
+        width: 70%;
+        z-index: 10;
+        transition: all 1s;
+    }
+
+    .position-vrt{
+        transform: translateX(0);
+    }
+
+    .nav-vrt text{
+        display: flex !important;
+    }
+
+    .hamburger-admin{
+        padding: .2rem;
+        cursor: pointer;
+        z-index: 50;
+    }
+
+
+    .flot-d{
+        float: right;
+        width: 100%;
+        height: auto;
+        overflow-y: auto;
+    }
+}
+
+
+

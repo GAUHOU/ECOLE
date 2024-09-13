@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style 1.1.css">
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <%- include ("./menu.admin.vrt.ejs") %>
+    <%- include ("./menu.admin.hoz.ejs") %>
+
+    <div class="flot-d">
+        <div class="case">
+            <div class="case-g"><h2 class="page-title">Ressource humaine</h2></div>
+            <div class="case-g">
+                <div class="case-grid">
+                    
+                    <div class="grid ombre cart" id="1">
+                        <div class="text">
+                            <h5>Total Personnels</h5>
+                            <h1>783</h1>
+                        </div>
+                        <div class="img-icon"><span class="icon"><img src="../ions/utilisateurs-alt(1).svg" alt="" class="icons utilisateurs-alt"></span></div>
+                    </div>
+
+                    <div class="grid ombre cart" id="2">
+                        <div class="text">
+                            <h5>Total Enseignants</h5>
+                            <h1>783</h1>
+                        </div>
+                        <div class="img-icon"><span class="icon"><img src="../ions/workshop(1).svg" alt="" class="icons workshop"></span></div>
+                    </div>
+
+                    <div class="grid ombre cart" id="3">
+                        <div class="text">
+                            <h5>Total Contrats</h5>
+                            <h1>783</h1>
+                        </div>
+                        <div class="img-icon"><span class="icon"><img src="../ions/document-signe.svg" alt="" class="icons document-signe"></span></div>
+                    </div>
+
+                    <div class="grid ombre cart" id="4">
+                        <div class="text">
+                            <h5>Total Congés</h5>
+                            <h1>783</h1>
+                        </div>
+                        <div class="img-icon"><span class="icon"><img src="../ions/calendar.svg" alt="" class="icons calendar"></span></div>
+                    </div>
+
+                    <div class="grid ombre cart" id="5">
+                        <div class="text">
+                            <h5>Total Absences</h5>
+                            <h1>783</h1>
+                        </div>
+                        <div class="img-icon"><span class="icon"><img src="../ions/calendar.svg" alt="" class="icons calendar"></span></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="case-g rhss">
+
+                <div class="rhs listes-pers c-c-v active" id="rhs-1">
+                    <div class="txt">
+                        <h3>Listes du personnels</h3>
+                        <form action="" class="form"><input type="search" name="" id="" placeholder="Gauhou Seri Abdoul Aziz"></form>
+                    </div>
+                    <div class="tableau">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>IMAGES</th>
+                                    <th>ID</th>
+                                    <th>MATRICULES</th>
+                                    <th>NOM</th>
+                                    <th>PRENOMS</th>
+                                    <th>PROFESSIONS</th>
+                                    <th class="c-c-v">ACTIONS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <% for (let i = 1; i < 10; i++) { %>
+                                    <tr>
+                                        <td><div class="btn-info"><span class="icon"><img src="../ions/eye-crossed.svg" alt="" class="icons workshop"></span></div></td>
+                                        <td><span class="icon profil"><img src="../ions/user.svg" alt="" class="icons user"></span></td>
+                                        <td><%= i %></td>
+                                        <td>5634644821G</td>
+                                        <td>GAUHOU</td>
+                                        <td>SERI ABDOUL AZIZ</td>
+                                        <td>ENSEIGNANTS</td>
+                                        <td class="btns c-c">
+                                            <div class="btn btn-bl btn-update c-c-v"><span class="icon c-c-v"><img src="../ions/pen-square.svg" alt="" class="icons pen-square"></span></div>
+                                            <div class="btn btn-rg btn-delete c-c-v"><span class="icon c-c-v"><img src="../ions/trash.svg" alt="" class="icons trash"></span></div>
+                                        </td>
+                                    </tr>
+                                <% } %>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="info-pers ombre">
+                        <div class="case-g c-btwn">
+                            <h2>Information de ?</h2>
+                            <div class="btn-close-info">
+                                <span class="icon"><img src="../ions/traverser.svg" alt="" class="icons traverser"></span>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="update-pers ombre">
+                        <div class="case-g c-btwn">
+                            <h2>Modification de ?</h2>
+                            <div class="btn-close-update">
+                                <span class="icon"><img src="../ions/traverser.svg" alt="" class="icons traverser"></span>
+                            </div>
+                        </div>
+                        <div class="case">
+                            <div class="case-g">
+                                <div class="img-pers ombre c-c-v">
+                                    <span class="icon"><img src="../ions/user.svg" alt="" class="icons user"></span>
+                                    <h2>NOM & PRENOMS</h2>
+                                </div>
+                            </div>
+
+                            <div class="case-g">
+                                <form action="" class="form ombre">
+                                    <input type="text" name="" id="" placeholder="Entrez le Matricule...">
+                                    <input type="text" name="" id="" placeholder="Entrez le nom...">
+                                    <input type="text" name="" id="" placeholder="Entrez le prénoms...">
+                                    <input type="date" name="" id="" placeholder="Entrez la date de naissance...">
+                                    <select name="" id="">
+                                        <option value="HOMME">HOMME</option>
+                                        <option value="FEMME">FEMME</option>
+                                    </select>
+                                    <input type="tel" name="" id="" placeholder="Entrez le numero de portable...">
+                                    <input type="text" name="" id="" placeholder="Entrez l'adresse">
+                                    <input type="email" name="" id="" placeholder="Entrez l'adresse email...">
+                                    <select name="" id="">
+                                        <option value="Permanent">Permanent</option>
+                                        <option value="Vacataire">Vacataire</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="Accepter">Accepter</option>
+                                        <option value="Refuser">Refuser</option>
+                                    </select>
+                                    <input type="file" name="" id="" placeholder="Choisissez une photo...">
+                                    <input type="submit" value="Modifier" class="btn btn-bl">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="rhs listes-pers c-c-v" id="rhs-2">
+                    <div class="txt">
+                        <h3>Listes des enseignants</h3>
+                        <form action="" class="form"><input type="search" name="" id="" placeholder="Gauhou Seri Abdoul Aziz"></form>
+                    </div>
+                    <div class="tableau">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>IMAGES</th>
+                                    <th>ID</th>
+                                    <th>MATRICULES</th>
+                                    <th>NOM</th>
+                                    <th>PRENOMS</th>
+                                    <th>PROFESSIONS</th>
+                                    <th class="c-c-v">ACTIONS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <% for (let i = 1; i < 10; i++) { %>
+                                    <tr>
+                                        <td><div class="btn-info"><span class="icon"><img src="../ions/eye-crossed.svg" alt="" class="icons workshop"></span></div></td>
+                                        <td><span class="icon profil"><img src="../ions/user.svg" alt="" class="icons user"></span></td>
+                                        <td><%= i %></td>
+                                        <td>5634644821G</td>
+                                        <td>GAUHOU</td>
+                                        <td>SERI ABDOUL AZIZ</td>
+                                        <td>ENSEIGNANTS</td>
+                                        <td class="btns c-c">
+                                            <div class="btn btn-bl btn-update c-c-v"><span class="icon c-c-v"><img src="../ions/pen-square.svg" alt="" class="icons pen-square"></span></div>
+                                            <div class="btn btn-rg btn-delete c-c-v"><span class="icon c-c-v"><img src="../ions/trash.svg" alt="" class="icons trash"></span></div>
+                                        </td>
+                                    </tr>
+                                <% } %>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="info-pers ombre">
+                        <div class="case-g c-btwn">
+                            <h2>Information de ?</h2>
+                            <div class="btn-close-info">
+                                <span class="icon"><img src="../ions/traverser.svg" alt="" class="icons traverser"></span>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="update-pers ombre">
+                        <div class="case-g c-btwn">
+                            <h2>Modification de ?</h2>
+                            <div class="btn-close-update">
+                                <span class="icon"><img src="../ions/traverser.svg" alt="" class="icons traverser"></span>
+                            </div>
+                        </div>
+                        <div class="case">
+                            <div class="case-g">
+                                <div class="img-pers ombre c-c-v">
+                                    <span class="icon"><img src="../ions/user.svg" alt="" class="icons user"></span>
+                                    <h2>NOM & PRENOMS</h2>
+                                </div>
+                            </div>
+
+                            <div class="case-g">
+                                <form action="" class="form ombre">
+                                    <input type="text" name="" id="" placeholder="Entrez le Matricule...">
+                                    <input type="text" name="" id="" placeholder="Entrez le nom...">
+                                    <input type="text" name="" id="" placeholder="Entrez le prénoms...">
+                                    <input type="date" name="" id="" placeholder="Entrez la date de naissance...">
+                                    <select name="" id="">
+                                        <option value="HOMME">HOMME</option>
+                                        <option value="FEMME">FEMME</option>
+                                    </select>
+                                    <input type="tel" name="" id="" placeholder="Entrez le numero de portable...">
+                                    <input type="text" name="" id="" placeholder="Entrez l'adresse">
+                                    <input type="email" name="" id="" placeholder="Entrez l'adresse email...">
+                                    <select name="" id="">
+                                        <option value="Permanent">Permanent</option>
+                                        <option value="Vacataire">Vacataire</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="Accepter">Accepter</option>
+                                        <option value="Refuser">Refuser</option>
+                                    </select>
+                                    <input type="file" name="" id="" placeholder="Choisissez une photo...">
+                                    <input type="submit" value="Modifier" class="btn btn-bl">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="rhs listes-pers c-c-v" id="rhs-3">
+                    <div class="txt">
+                        <h3>Contrats du personnels</h3>
+                        <form action="" class="form"><input type="search" name="" id="" placeholder="Gauhou Seri Abdoul Aziz"></form>
+                    </div>
+                    <div class="tableau">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>IMAGES</th>
+                                    <th>ID</th>
+                                    <th>MATRICULES</th>
+                                    <th>NOM</th>
+                                    <th>PRENOMS</th>
+                                    <th>PROFESSIONS</th>
+                                    <th class="c-c-v">ACTIONS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <% for (let i = 1; i < 10; i++) { %>
+                                    <tr>
+                                        <td><div class="btn-info"><span class="icon"><img src="../ions/eye-crossed.svg" alt="" class="icons workshop"></span></div></td>
+                                        <td><span class="icon profil"><img src="../ions/user.svg" alt="" class="icons user"></span></td>
+                                        <td><%= i %></td>
+                                        <td>5634644821G</td>
+                                        <td>GAUHOU</td>
+                                        <td>SERI ABDOUL AZIZ</td>
+                                        <td>ENSEIGNANTS</td>
+                                        <td class="btns c-c">
+                                            <div class="btn btn-bl btn-update c-c-v"><span class="icon c-c-v"><img src="../ions/pen-square.svg" alt="" class="icons pen-square"></span></div>
+                                            <div class="btn btn-rg btn-delete c-c-v"><span class="icon c-c-v"><img src="../ions/trash.svg" alt="" class="icons trash"></span></div>
+                                        </td>
+                                    </tr>
+                                <% } %>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="info-pers ombre">
+                        <div class="case-g c-btwn">
+                            <h2>Information de ?</h2>
+                            <div class="btn-close-info">
+                                <span class="icon"><img src="../ions/traverser.svg" alt="" class="icons traverser"></span>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="update-pers ombre">
+                        <div class="case-g c-btwn">
+                            <h2>Modification de ?</h2>
+                            <div class="btn-close-update">
+                                <span class="icon"><img src="../ions/traverser.svg" alt="" class="icons traverser"></span>
+                            </div>
+                        </div>
+                        <div class="case">
+                            <div class="case-g">
+                                <div class="img-pers ombre c-c-v">
+                                    <span class="icon"><img src="../ions/user.svg" alt="" class="icons user"></span>
+                                    <h2>NOM & PRENOMS</h2>
+                                </div>
+                            </div>
+
+                            <div class="case-g">
+                                <form action="" class="form ombre">
+                                    <input type="text" name="" id="" placeholder="Entrez le Matricule...">
+                                    <input type="text" name="" id="" placeholder="Entrez le nom...">
+                                    <input type="text" name="" id="" placeholder="Entrez le prénoms...">
+                                    <input type="date" name="" id="" placeholder="Entrez la date de naissance...">
+                                    <select name="" id="">
+                                        <option value="HOMME">HOMME</option>
+                                        <option value="FEMME">FEMME</option>
+                                    </select>
+                                    <input type="tel" name="" id="" placeholder="Entrez le numero de portable...">
+                                    <input type="text" name="" id="" placeholder="Entrez l'adresse">
+                                    <input type="email" name="" id="" placeholder="Entrez l'adresse email...">
+                                    <select name="" id="">
+                                        <option value="Permanent">Permanent</option>
+                                        <option value="Vacataire">Vacataire</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="Accepter">Accepter</option>
+                                        <option value="Refuser">Refuser</option>
+                                    </select>
+                                    <input type="file" name="" id="" placeholder="Choisissez une photo...">
+                                    <input type="submit" value="Modifier" class="btn btn-bl">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="rhs listes-pers c-c-v" id="rhs-4">
+                    <div class="txt">
+                        <h3>Listes des Personnes en Congés</h3>
+                        <form action="" class="form"><input type="search" name="" id="" placeholder="Gauhou Seri Abdoul Aziz"></form>
+                    </div>
+                    <div class="tableau">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>IMAGES</th>
+                                    <th>ID</th>
+                                    <th>MATRICULES</th>
+                                    <th>NOM</th>
+                                    <th>PRENOMS</th>
+                                    <th>PROFESSIONS</th>
+                                    <th class="c-c-v">ACTIONS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <% for (let i = 1; i < 10; i++) { %>
+                                    <tr>
+                                        <td><div class="btn-info"><span class="icon"><img src="../ions/eye-crossed.svg" alt="" class="icons workshop"></span></div></td>
+                                        <td><span class="icon profil"><img src="../ions/user.svg" alt="" class="icons user"></span></td>
+                                        <td><%= i %></td>
+                                        <td>5634644821G</td>
+                                        <td>GAUHOU</td>
+                                        <td>SERI ABDOUL AZIZ</td>
+                                        <td>ENSEIGNANTS</td>
+                                        <td class="btns c-c">
+                                            <div class="btn btn-bl btn-update c-c-v"><span class="icon c-c-v"><img src="../ions/pen-square.svg" alt="" class="icons pen-square"></span></div>
+                                            <div class="btn btn-rg btn-delete c-c-v"><span class="icon c-c-v"><img src="../ions/trash.svg" alt="" class="icons trash"></span></div>
+                                        </td>
+                                    </tr>
+                                <% } %>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="info-pers ombre">
+                        <div class="case-g c-btwn">
+                            <h2>Information de ?</h2>
+                            <div class="btn-close-info">
+                                <span class="icon"><img src="../ions/traverser.svg" alt="" class="icons traverser"></span>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="update-pers ombre">
+                        <div class="case-g c-btwn">
+                            <h2>Modification de ?</h2>
+                            <div class="btn-close-update">
+                                <span class="icon"><img src="../ions/traverser.svg" alt="" class="icons traverser"></span>
+                            </div>
+                        </div>
+                        <div class="case">
+                            <div class="case-g">
+                                <div class="img-pers ombre c-c-v">
+                                    <span class="icon"><img src="../ions/user.svg" alt="" class="icons user"></span>
+                                    <h2>NOM & PRENOMS</h2>
+                                </div>
+                            </div>
+
+                            <div class="case-g">
+                                <form action="" class="form ombre">
+                                    <input type="text" name="" id="" placeholder="Entrez le Matricule...">
+                                    <input type="text" name="" id="" placeholder="Entrez le nom...">
+                                    <input type="text" name="" id="" placeholder="Entrez le prénoms...">
+                                    <input type="date" name="" id="" placeholder="Entrez la date de naissance...">
+                                    <select name="" id="">
+                                        <option value="HOMME">HOMME</option>
+                                        <option value="FEMME">FEMME</option>
+                                    </select>
+                                    <input type="tel" name="" id="" placeholder="Entrez le numero de portable...">
+                                    <input type="text" name="" id="" placeholder="Entrez l'adresse">
+                                    <input type="email" name="" id="" placeholder="Entrez l'adresse email...">
+                                    <select name="" id="">
+                                        <option value="Permanent">Permanent</option>
+                                        <option value="Vacataire">Vacataire</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="Accepter">Accepter</option>
+                                        <option value="Refuser">Refuser</option>
+                                    </select>
+                                    <input type="file" name="" id="" placeholder="Choisissez une photo...">
+                                    <input type="submit" value="Modifier" class="btn btn-bl">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="rhs listes-pers c-c-v" id="rhs-5">
+                    <div class="txt">
+                        <h3>Listes des Personnes Absents</h3>
+                        <form action="" class="form"><input type="search" name="" id="" placeholder="Gauhou Seri Abdoul Aziz"></form>
+                    </div>
+                    <div class="tableau">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>IMAGES</th>
+                                    <th>ID</th>
+                                    <th>MATRICULES</th>
+                                    <th>NOM</th>
+                                    <th>PRENOMS</th>
+                                    <th>PROFESSIONS</th>
+                                    <th class="c-c-v">ACTIONS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <% for (let i = 1; i < 10; i++) { %>
+                                    <tr>
+                                        <td><div class="btn-info"><span class="icon"><img src="../ions/eye-crossed.svg" alt="" class="icons workshop"></span></div></td>
+                                        <td><span class="icon profil"><img src="../ions/user.svg" alt="" class="icons user"></span></td>
+                                        <td><%= i %></td>
+                                        <td>5634644821G</td>
+                                        <td>GAUHOU</td>
+                                        <td>SERI ABDOUL AZIZ</td>
+                                        <td>ENSEIGNANTS</td>
+                                        <td class="btns c-c">
+                                            <div class="btn btn-bl btn-update c-c-v"><span class="icon c-c-v"><img src="../ions/pen-square.svg" alt="" class="icons pen-square"></span></div>
+                                            <div class="btn btn-rg btn-delete c-c-v"><span class="icon c-c-v"><img src="../ions/trash.svg" alt="" class="icons trash"></span></div>
+                                        </td>
+                                    </tr>
+                                <% } %>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="info-pers ombre">
+                        <div class="case-g c-btwn">
+                            <h2>Information de ?</h2>
+                            <div class="btn-close-info">
+                                <span class="icon"><img src="../ions/traverser.svg" alt="" class="icons traverser"></span>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="update-pers ombre">
+                        <div class="case-g c-btwn">
+                            <h2>Modification de ?</h2>
+                            <div class="btn-close-update">
+                                <span class="icon"><img src="../ions/traverser.svg" alt="" class="icons traverser"></span>
+                            </div>
+                        </div>
+                        <div class="case">
+                            <div class="case-g">
+                                <div class="img-pers ombre c-c-v">
+                                    <span class="icon"><img src="../ions/user.svg" alt="" class="icons user"></span>
+                                    <h2>NOM & PRENOMS</h2>
+                                </div>
+                            </div>
+
+                            <div class="case-g">
+                                <form action="" class="form ombre">
+                                    <input type="text" name="" id="" placeholder="Entrez le Matricule...">
+                                    <input type="text" name="" id="" placeholder="Entrez le nom...">
+                                    <input type="text" name="" id="" placeholder="Entrez le prénoms...">
+                                    <input type="date" name="" id="" placeholder="Entrez la date de naissance...">
+                                    <select name="" id="">
+                                        <option value="HOMME">HOMME</option>
+                                        <option value="FEMME">FEMME</option>
+                                    </select>
+                                    <input type="tel" name="" id="" placeholder="Entrez le numero de portable...">
+                                    <input type="text" name="" id="" placeholder="Entrez l'adresse">
+                                    <input type="email" name="" id="" placeholder="Entrez l'adresse email...">
+                                    <select name="" id="">
+                                        <option value="Permanent">Permanent</option>
+                                        <option value="Vacataire">Vacataire</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="Accepter">Accepter</option>
+                                        <option value="Refuser">Refuser</option>
+                                    </select>
+                                    <input type="file" name="" id="" placeholder="Choisissez une photo...">
+                                    <input type="submit" value="Modifier" class="btn btn-bl">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/rh.js"></script>
+</body>
+</html>
